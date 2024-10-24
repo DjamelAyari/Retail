@@ -1,0 +1,221 @@
+ALTER TABLE customer MODIFY familly_name_customer VARBINARY(255);
+ALTER TABLE customer MODIFY name_customer VARBINARY(255);
+ALTER TABLE customer MODIFY birth_date_customer VARBINARY(255);
+ALTER TABLE customer MODIFY email_customer VARBINARY(255);
+ALTER TABLE customer MODIFY phone_customer VARBINARY(255);
+ALTER TABLE customer MODIFY alley_number_customer VARBINARY(255);
+ALTER TABLE customer MODIFY repetition_index_customer VARBINARY(255);
+ALTER TABLE customer MODIFY alley_type_customer VARBINARY(255);
+ALTER TABLE customer MODIFY alley VARBINARY(255);
+ALTER TABLE customer MODIFY zip_code_customer VARBINARY(255);
+ALTER TABLE customer MODIFY city_customer VARBINARY(255);
+ALTER TABLE customer MODIFY country VARBINARY(255);
+
+INSERT INTO customer (
+	familly_name_customer, name_customer, birth_date_customer, email_customer,
+    phone_customer, alley_number_customer, repetition_index_customer,
+    alley_type_customer, alley, zip_code_customer, city_customer, country
+) VALUES (
+    AES_ENCRYPT('Smith', 'Laurine12...'),
+    AES_ENCRYPT('John', 'Laurine12...'),
+    AES_ENCRYPT('1985-01-15', 'Laurine12...'), -- Birthdate stored as string
+    AES_ENCRYPT('john.smith@example.com', 'Laurine12...'),
+    AES_ENCRYPT('1234567890', 'Laurine12...'), -- Phone number stored as string
+    AES_ENCRYPT('12', 'Laurine12...'), -- Alley number stored as string
+    AES_ENCRYPT('A', 'Laurine12...'),
+    AES_ENCRYPT('Residential', 'Laurine12...'),
+    AES_ENCRYPT('Elm Street', 'Laurine12...'),
+    AES_ENCRYPT('12345', 'Laurine12...'), -- Zip code stored as string
+    AES_ENCRYPT('Springfield', 'Laurine12...'),
+    AES_ENCRYPT('USA', 'Laurine12...')
+);
+
+INSERT INTO customer (
+    familly_name_customer, name_customer, birth_date_customer, email_customer,
+    phone_customer, alley_number_customer, repetition_index_customer,
+    alley_type_customer, alley, zip_code_customer, city_customer, country
+) VALUES (
+    AES_ENCRYPT('Johnson', 'Laurine12...'),
+    AES_ENCRYPT('Emma', 'Laurine12...'),
+    AES_ENCRYPT('1990-07-22', 'Laurine12...'),
+    AES_ENCRYPT('emma.johnson@example.com', 'Laurine12...'),
+    AES_ENCRYPT('0987654321', 'Laurine12...'),
+    AES_ENCRYPT('34', 'Laurine12...'),
+    AES_ENCRYPT('B', 'Laurine12...'),
+    AES_ENCRYPT('Commercial', 'Laurine12...'),
+    AES_ENCRYPT('Oak Avenue', 'Laurine12...'),
+    AES_ENCRYPT('67890', 'Laurine12...'),
+    AES_ENCRYPT('Riverside', 'Laurine12...'),
+    AES_ENCRYPT('Canada', 'Laurine12...')
+);
+
+INSERT INTO customer (
+    familly_name_customer, name_customer, birth_date_customer, email_customer,
+    phone_customer, alley_number_customer, repetition_index_customer,
+    alley_type_customer, alley, zip_code_customer, city_customer, country
+) VALUES (
+    AES_ENCRYPT('Williams', 'Laurine12...'),
+    AES_ENCRYPT('Liam', 'Laurine12...'),
+    AES_ENCRYPT('1988-03-10', 'Laurine12...'),
+    AES_ENCRYPT('liam.williams@example.com', 'Laurine12...'),
+    AES_ENCRYPT('1122334455', 'Laurine12...'),
+    AES_ENCRYPT('56', 'Laurine12...'),
+    AES_ENCRYPT('C', 'Laurine12...'),
+    AES_ENCRYPT('Industrial', 'Laurine12...'),
+    AES_ENCRYPT('Maple Road', 'Laurine12...'),
+    AES_ENCRYPT('54321', 'Laurine12...'),
+    AES_ENCRYPT('Lakeside', 'Laurine12...'),
+    AES_ENCRYPT('UK', 'Laurine12...')
+);
+
+INSERT INTO customer (
+    familly_name_customer, name_customer, birth_date_customer, email_customer,
+    phone_customer, alley_number_customer, repetition_index_customer,
+    alley_type_customer, alley, zip_code_customer, city_customer, country
+) VALUES (
+    AES_ENCRYPT('Brown', 'Laurine12...'),
+    AES_ENCRYPT('Olivia', 'Laurine12...'),
+    AES_ENCRYPT('1995-11-05', 'Laurine12...'),
+    AES_ENCRYPT('olivia.brown@example.com', 'Laurine12...'),
+    AES_ENCRYPT('2233445566', 'Laurine12...'),
+    AES_ENCRYPT('78', 'Laurine12...'),
+    AES_ENCRYPT('D', 'Laurine12...'),
+    AES_ENCRYPT('Mixed', 'Laurine12...'),
+    AES_ENCRYPT('Pine Lane', 'Laurine12...'),
+    AES_ENCRYPT('98765', 'Laurine12...'),
+    AES_ENCRYPT('Mountainview', 'Laurine12...'),
+    AES_ENCRYPT('Australia', 'Laurine12...')
+);
+
+INSERT INTO customer (
+    familly_name_customer, name_customer, birth_date_customer, email_customer,
+    phone_customer, alley_number_customer, repetition_index_customer,
+    alley_type_customer, alley, zip_code_customer, city_customer, country
+) VALUES (
+    AES_ENCRYPT('Jones', 'Laurine12...'),
+    AES_ENCRYPT('Noah', 'Laurine12...'),
+    AES_ENCRYPT('1982-09-30', 'Laurine12...'),
+    AES_ENCRYPT('noah.jones@example.com', 'Laurine12...'),
+    AES_ENCRYPT('3344556677', 'Laurine12...'),
+    AES_ENCRYPT('90', 'Laurine12...'),
+    AES_ENCRYPT('E', 'Laurine12...'),
+    AES_ENCRYPT('Urban', 'Laurine12...'),
+    AES_ENCRYPT('Cedar Boulevard', 'Laurine12...'),
+    AES_ENCRYPT('34567', 'Laurine12...'),
+    AES_ENCRYPT('Seaside', 'Laurine12...'),
+    AES_ENCRYPT('Germany', 'Laurine12...')
+);
+
+INSERT INTO customer (
+    familly_name_customer, name_customer, birth_date_customer, email_customer,
+    phone_customer, alley_number_customer, repetition_index_customer,
+    alley_type_customer, alley, zip_code_customer, city_customer, country
+) VALUES (
+    AES_ENCRYPT('Garcia', 'Laurine12...'),
+    AES_ENCRYPT('Sophia', 'Laurine12...'),
+    AES_ENCRYPT('1987-06-12', 'Laurine12...'),
+    AES_ENCRYPT('sophia.garcia@example.com', 'Laurine12...'),
+    AES_ENCRYPT('5566778899', 'Laurine12...'),
+    AES_ENCRYPT('12', 'Laurine12...'),
+    AES_ENCRYPT('F', 'Laurine12...'),
+    AES_ENCRYPT('Suburban', 'Laurine12...'),
+    AES_ENCRYPT('Birch Street', 'Laurine12...'),
+    AES_ENCRYPT('45678', 'Laurine12...'),
+    AES_ENCRYPT('Greenfield', 'Laurine12...'),
+    AES_ENCRYPT('France', 'Laurine12...')
+);
+
+INSERT INTO customer (
+    familly_name_customer, name_customer, birth_date_customer, email_customer,
+    phone_customer, alley_number_customer, repetition_index_customer,
+    alley_type_customer, alley, zip_code_customer, city_customer, country
+) VALUES (
+    AES_ENCRYPT('Martinez', 'Laurine12...'),
+    AES_ENCRYPT('Mason', 'Laurine12...'),
+    AES_ENCRYPT('1992-12-25', 'Laurine12...'),
+    AES_ENCRYPT('mason.martinez@example.com', 'Laurine12...'),
+    AES_ENCRYPT('6677889900', 'Laurine12...'),
+    AES_ENCRYPT('34', 'Laurine12...'),
+    AES_ENCRYPT('G', 'Laurine12...'),
+    AES_ENCRYPT('Rural', 'Laurine12...'),
+    AES_ENCRYPT('Willow Way', 'Laurine12...'),
+    AES_ENCRYPT('23456', 'Laurine12...'),
+    AES_ENCRYPT('Valleyview', 'Laurine12...'),
+    AES_ENCRYPT('Spain', 'Laurine12...')
+);
+
+INSERT INTO customer (
+    familly_name_customer, name_customer, birth_date_customer, email_customer,
+    phone_customer, alley_number_customer, repetition_index_customer,
+    alley_type_customer, alley, zip_code_customer, city_customer, country
+) VALUES (
+    AES_ENCRYPT('Lee', 'Laurine12...'),
+    AES_ENCRYPT('Ava', 'Laurine12...'),
+    AES_ENCRYPT('1991-05-18', 'Laurine12...'),
+    AES_ENCRYPT('ava.lee@example.com', 'Laurine12...'),
+    AES_ENCRYPT('7788990011', 'Laurine12...'),
+    AES_ENCRYPT('56', 'Laurine12...'),
+    AES_ENCRYPT('H', 'Laurine12...'),
+    AES_ENCRYPT('Downtown', 'Laurine12...'),
+    AES_ENCRYPT('Maple Street', 'Laurine12...'),
+    AES_ENCRYPT('56789', 'Laurine12...'),
+    AES_ENCRYPT('Oldtown', 'Laurine12...'),
+    AES_ENCRYPT('Italy', 'Laurine12...')
+);
+
+INSERT INTO customer (
+    familly_name_customer, name_customer, birth_date_customer, email_customer,
+    phone_customer, alley_number_customer, repetition_index_customer,
+    alley_type_customer, alley, zip_code_customer, city_customer, country
+) VALUES (
+    AES_ENCRYPT('Wilson', 'Laurine12...'),
+    AES_ENCRYPT('James', 'Laurine12...'),
+    AES_ENCRYPT('1984-10-05', 'Laurine12...'),
+    AES_ENCRYPT('james.wilson@example.com', 'Laurine12...'),
+    AES_ENCRYPT('8899001122', 'Laurine12...'),
+    AES_ENCRYPT('78', 'Laurine12...'),
+    AES_ENCRYPT('I', 'Laurine12...'),
+    AES_ENCRYPT('Historic', 'Laurine12...'),
+    AES_ENCRYPT('Birch Avenue', 'Laurine12...'),
+    AES_ENCRYPT('67890', 'Laurine12...'),
+    AES_ENCRYPT('Eastside', 'Laurine12...'),
+    AES_ENCRYPT('Portugal', 'Laurine12...')
+);
+
+INSERT INTO customer (
+    familly_name_customer, name_customer, birth_date_customer, email_customer,
+    phone_customer, alley_number_customer, repetition_index_customer,
+    alley_type_customer, alley, zip_code_customer, city_customer, country
+) VALUES (
+    AES_ENCRYPT('Moore', 'Laurine12...'),
+    AES_ENCRYPT('Isabella', 'Laurine12...'),
+    AES_ENCRYPT('1993-04-23', 'Laurine12...'),
+    AES_ENCRYPT('isabella.moore@example.com', 'Laurine12...'),
+    AES_ENCRYPT('9900112233', 'Laurine12...'),
+    AES_ENCRYPT('90', 'Laurine12...'),
+    AES_ENCRYPT('J', 'Laurine12...'),
+    AES_ENCRYPT('Urban', 'Laurine12...'),
+    AES_ENCRYPT('Oak Avenue', 'Laurine12...'),
+    AES_ENCRYPT('78901', 'Laurine12...'),
+    AES_ENCRYPT('Brooklyn', 'Laurine12...'),
+    AES_ENCRYPT('Belgium', 'Laurine12...')
+);
+
+INSERT INTO customer (
+    familly_name_customer, name_customer, birth_date_customer, email_customer,
+    phone_customer, alley_number_customer, repetition_index_customer,
+    alley_type_customer, alley, zip_code_customer, city_customer, country
+) VALUES (
+    AES_ENCRYPT('Taylor', 'Laurine12...'),
+    AES_ENCRYPT('Benjamin', 'Laurine12...'),
+    AES_ENCRYPT('1994-08-15', 'Laurine12...'),
+    AES_ENCRYPT('benjamin.taylor@example.com', 'Laurine12...'),
+    AES_ENCRYPT('1122334455', 'Laurine12...'),
+    AES_ENCRYPT('12', 'Laurine12...'),
+    AES_ENCRYPT('K', 'Laurine12...'),
+    AES_ENCRYPT('Suburban', 'Laurine12...'),
+    AES_ENCRYPT('Elm Street', 'Laurine12...'),
+    AES_ENCRYPT('89012', 'Laurine12...'),
+    AES_ENCRYPT('Downtown', 'Laurine12...'),
+    AES_ENCRYPT('Sweden', 'Laurine12...')
+);

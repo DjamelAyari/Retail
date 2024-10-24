@@ -1,0 +1,64 @@
+header {
+    background-color: #0b523e; /* Couleur de fond */
+    display: flex; /* Active le mode Flexbox */
+    justify-content: space-between; /* Espace entre le logo et les boutons */
+    align-items: center; /* Aligne verticalement les éléments */
+    padding: 10px; /* Espacement autour du contenu */
+    border-radius: 5px; /* Arrondi des coins */
+}
+
+object /*Logo*/
+{
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+.div_brand_logo a {
+    display: inline-block; /* Ensures the anchor takes up the space of its contents */
+    width: 60px; /* Set the width to match the logo */
+    height: 60px; /* Set the height to match the logo */
+}
+
+.div_account_button {
+
+    flex: 1; /* Prend tout l'espace disponible pour centrer le logo */
+    display: flex; /* Active le mode Flexbox pour centrer le contenu */
+    justify-content: center; /* Centre le logo horizontalement */
+
+    /*display: flex; /* Utilisation de Flexbox pour les boutons */
+    /*justify-content: center; /* Aligne les boutons à droite */
+    /*align-items: center; /* Centre verticalement les boutons */
+    /*gap: 20px; /* Espace entre les éléments, ajuste si nécessaire */
+}
+
+main
+{
+    display: flex; /* Flexbox layout */
+    justify-content: space-between; /* Adds space between the two forms */
+    gap: 20px; /* Adds space between the divs */
+    max-width: 1000px; /* Sets a max width for the layout */
+    margin: 0 auto; /* Centers the main section */
+}
+
+.div_account_connexion
+{
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    padding: 10px; /* Espacement autour du contenu */
+    border-radius: 5px; /* Arrondi des coins */
+    background-color: #0b523e; /* Couleur de fond */
+    margin-top: 30px;
+}
+
+.div_account_creation
+{
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    padding: 10px; /* Espacement autour du contenu */
+    border-radius: 5px; /* Arrondi des coins */
+    background-color: #0b523e; /* Couleur de fond */
+    margin-top: 30px;
+}
+

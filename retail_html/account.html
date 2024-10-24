@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account</title>
+    <link rel="stylesheet" href="../retail_css/account.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="div_brand_logo">
+            <a href="home.html">
+                <img src="../retail_css/brand_logo.svg" width="60" height="60" alt="Brand Logo">
+            </a>
+        </div>
+               
+        <div class="div_account_button">
+            <a href="account.html" id="account_click">
+                <img src="../retail_css/account_logo.svg" alt="Home Icon" style="width: 30px; height: 30px;">
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <div class="div_account_connexion">
+            <h3>Connexion</h3>
+            <form id="connexion_form" action="http://localhost:8443/account_connexion" method="get">
+                <label for="email_customer_connexion">Email:</label>
+                <input type="text" id="email_customer_connexion" name="email_customer_connexion">
+        
+                <label for="customer_password_connexion">Password:</label>
+                <input type="text" id="customer_password_connexion" name="customer_password_connexion">
+        
+                <button type="submit">Search</button>
+            </form>
+        </div>
+
+        <div class="div_account_creation">
+            <h3>Create an account</h3>
+            <form id="creation_form" action="http://localhost:8443/account_creation" method="post">
+                <label for="familly_name_customer">Familly Name:</label>
+                <input type="text" id="familly_name_customer" name="familly_name_customer" required>
+
+                <label for="name_customer">Name:</label>
+                <input type="text" id="name_customer" name="name_customer" required>
+
+                <label for="birth_date_customer">Birth Date:</label>
+                <input type="date" id="birth_date_customer" name="birth_date_customer" required>
+
+                <label for="email_customer">Email:</label>
+                <input type="email" id="email_customer" name="email_customer" required>
+
+                <label for="phone_customer">Phone:</label>
+                <input type="number" id="phone_customer" name="phone_customer" required>
+
+                <label for="alley_number_customer">Alley Number:</label>
+                <input type="number" id="alley_number_customer" name="alley_number_customer" required>
+
+                <label for="repetition_index_customer">Index:</label>
+                <input type="text" id="repetition_index_customer" name="repetition_index_customer" value="NULL">
+
+                <label for="alley_type_customer">Alley Type:</label>
+                <input type="text" id="alley_type_customer" name="alley_type_customer" required>
+
+                <label for="alley">Alley:</label>
+                <input type="text" id="alley" name="alley" required>
+
+                <label for="zip_code_customer">Zip Code:</label>
+                <input type="number" id="zip_code_customer" name="zip_code_customer" required>
+
+                <label for="city_customer">City:</label>
+                <input type="text" id="city_customer" name="city_customer" required>
+
+                <label for="country">Country:</label>
+                <input type="text" id="country" name="country" required>
+        
+                <label for="password_customer">Password:</label>
+                <input type="text" id="password_customer" name="password_customer" required>
+        
+                <button type="submit">Search</button>
+            </form>
+
+        </div>
+    </main>
+
+    <div id="results"></div>
+
+    <script src="../retail_javascript/account_creation_queries.js"></script>
+
+</body>

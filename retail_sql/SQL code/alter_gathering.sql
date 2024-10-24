@@ -1,0 +1,1 @@
+ALTER TABLE gathering MODIFY month_gathering ENUM('January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December') NOT NULL;

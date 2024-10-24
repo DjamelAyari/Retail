@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edible</title>
+    <link rel="stylesheet" href="../retail_css/seed.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="div_brand_logo">
+            <a href="home.html">
+                <img src="../retail_css/brand_logo.svg" width="60" height="60" alt="Brand Logo">
+            </a>
+        </div>
+
+        <div class="div_rudan_button">
+            <a href="edible_fruit.html" id="edible_fruit_click" class="nav_button">Edible Fruit</a>
+            <script src="../retail_javascript/edible_fruit.js"></script>
+            
+            <a href="edible_vegetable.html" id="edible_vegetable_click" class="nav_button">Edible Vegetable</a>
+            <script src="../retail_javascript/edible_vegetable.js"></script>
+            
+            <a href="plant_fruit.html" id="plant_click" class="nav_button">Plant Fruit</a>
+            <script src="../retail_javascript/plant_fruit.js"></script>
+
+            <a href="plant_vegetable.html" id="plant_vegetable_click" class="nav_button">Plant Vegetable</a>
+            <script src="../retail_javascript/plant_vegetable.js"></script>
+            
+            <a href="seed_fruit.html" id="seed_fruit_click" class="nav_button">Seed Fruit</a>
+            <script src="../retail_javascript/seed_fruit.js"></script>
+
+            <a href="seed_vegetable.html" id="seed_vegetable_click" class="nav_button">Seed Vegetable</a>
+            <script src="../retail_javascript/seed_vegetable.js"></script>
+        </div>
+        
+        <div class="div_account_cart_button">
+            <a href="account.html" id="account_click">
+                <img src="../retail_css/account_logo.svg" alt="Home Icon" style="width: 30px; height: 30px;">
+            </a>
+            <a href="cart.html" id="cart_click">
+                <img src="../retail_css/cart_logo.svg" alt="Home Icon" style="width: 35px; height: 35px;">
+            </a>
+        </div>
+    </header>
+
+    <form id="search_form" action="http://localhost:8443/seed_vegetable" method="get">
+        <label for="name_vegetable">Name:</label>
+        <input type="text" id="name_vegetable" name="name_vegetable" value="">
+
+	    <label for="variety_vegetable">Variety:</label>
+        <input type="text" id="variety_vegetable" name="variety_vegetable" value="">
+
+	    <label for="latin_name_vegetable">Latin Name:</label>
+        <input type="text" id="latin_name_vegetable" name="latin_name_vegetable" value="">
+
+	    <label for="origine_seed">Origine:</label>
+        <input type="text" id="origine_seed" name="origine_seed" value="">
+
+	    <label for="price_seed">Price:</label>
+        <input type="text" id="price_seed" name="price_seed" value="">
+
+	    <label for="quantity_stock">Quantity:</label>
+        <input type="text" id="quantity_stock" name="quantity_stock" value="">
+
+        <label for="month_gathering">Month Gathering:</label>
+        <select id="month_gathering" name="month_gathering">
+            <option value="NULL" selected></option>
+            <option value="january">January</option>
+            <option value="february">February</option>
+            <option value="march">March</option>
+            <option value="april">April</option>
+            <option value="may">May</option>
+            <option value="june">June</option>
+            <option value="july">July</option>
+            <option value="august">August</option>
+            <option value="september">September</option>
+            <option value="october">October</option>
+            <option value="november">November</option>
+            <option value="december">December</option>
+        </select>
+
+        <label for="month_cultivation">Month Cultivation:</label>
+        <select id="month_cultivation" name="month_cultivation">
+            <option value="NULL" selected></option>
+            <option value="january">January</option>
+            <option value="february">February</option>
+            <option value="march">March</option>
+            <option value="april">April</option>
+            <option value="may">May</option>
+            <option value="june">June</option>
+            <option value="july">July</option>
+            <option value="august">August</option>
+            <option value="september">September</option>
+            <option value="october">October</option>
+            <option value="november">November</option>
+            <option value="december">December</option>
+        </select>
+
+        <label for="floor_type">Floor Type:</label>
+        <select id="floor_type" name="floor_type">
+            <option value="NULL" selected></option>
+            <option value="clayey">Clayey</option>
+            <option value="loamy">Loamy</option>
+            <option value="sandy">Sandy</option>
+            <option value="well-drained">Well-drained</option>
+        </select>
+
+        <label for="quantity_sun_need">Sun Need:</label>
+        <select id="quantity_sun_need" name="quantity_sun_need">
+            <option value="NULL" selected></option>
+            <option value="full sun">Full Sun</option>
+            <option value="partial sun">Partial Sun</option>
+        </select>
+
+        <label for="quantity_water_need">Water Need:</label>
+        <select id="quantity_water_need" name="quantity_water_need">
+            <option value="NULL" selected></option>
+            <option value="moderate">Moderate</option>
+            <option value="high">High</option>
+        </select>
+
+        <button type="submit" id="search_button">Search</button>
+    </form>
+
+    <div id="results"></div>
+
+    <script src="../retail_javascript/seed_vegetable_queries.js"></script>
+    
+</body>

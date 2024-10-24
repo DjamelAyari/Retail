@@ -1,0 +1,52 @@
+-- Inserting data into the vegetables table
+
+-- Carrots
+INSERT INTO vegetable (name_vegetable, latin_name_vegetable, variety_vegetable) VALUES ('Carrot', 'Daucus carota', 'Nantes');
+INSERT INTO vegetable (name_vegetable, latin_name_vegetable, variety_vegetable) VALUES ('Carrot', 'Daucus carota', 'Danvers');
+INSERT INTO vegetable (name_vegetable, latin_name_vegetable, variety_vegetable) VALUES ('Carrot', 'Daucus carota', 'Imperator');
+
+-- Tomatoes
+INSERT INTO vegetable (name_vegetable, latin_name_vegetable, variety_vegetable) VALUES ('Tomato', 'Solanum lycopersicum', 'Roma');
+INSERT INTO vegetable (name_vegetable, latin_name_vegetable, variety_vegetable) VALUES ('Tomato', 'Solanum lycopersicum', 'Cherry');
+INSERT INTO vegetable (name_vegetable, latin_name_vegetable, variety_vegetable) VALUES ('Tomato', 'Solanum lycopersicum', 'Beefsteak');
+
+-- Bell Peppers
+INSERT INTO vegetable (name_vegetable, latin_name_vegetable, variety_vegetable) VALUES ('Bell Pepper', 'Capsicum annuum', 'California Wonder');
+INSERT INTO vegetable (name_vegetable, latin_name_vegetable, variety_vegetable) VALUES ('Bell Pepper', 'Capsicum annuum', 'Bell Boy');
+INSERT INTO vegetable (name_vegetable, latin_name_vegetable, variety_vegetable) VALUES ('Bell Pepper', 'Capsicum annuum', 'Purple Beauty');
+
+-- Cucumbers
+INSERT INTO vegetable (name_vegetable, latin_name_vegetable, variety_vegetable) VALUES ('Cucumber', 'Cucumis sativus', 'English');
+INSERT INTO vegetable (name_vegetable, latin_name_vegetable, variety_vegetable) VALUES ('Cucumber', 'Cucumis sativus', 'Lebanese');
+INSERT INTO vegetable (name_vegetable, latin_name_vegetable, variety_vegetable) VALUES ('Cucumber', 'Cucumis sativus', 'Pickling');
+
+-- Lettuce
+INSERT INTO vegetable (name_vegetable, latin_name_vegetable, variety_vegetable) VALUES ('Lettuce', 'Lactuca sativa', 'Romaine');
+INSERT INTO vegetable (name_vegetable, latin_name_vegetable, variety_vegetable) VALUES ('Lettuce', 'Lactuca sativa', 'Butterhead');
+INSERT INTO vegetable (name_vegetable, latin_name_vegetable, variety_vegetable) VALUES ('Lettuce', 'Lactuca sativa', 'Leaf');
+
+-- Spinach
+INSERT INTO vegetable (name_vegetable, latin_name_vegetable, variety_vegetable) VALUES ('Spinach', 'Spinacia oleracea', 'Bloomsdale');
+INSERT INTO vegetable (name_vegetable, latin_name_vegetable, variety_vegetable) VALUES ('Spinach', 'Spinacia oleracea', 'Baby Leaf');
+INSERT INTO vegetable (name_vegetable, latin_name_vegetable, variety_vegetable) VALUES ('Spinach', 'Spinacia oleracea', 'Savoy');
+
+-- Broccoli
+INSERT INTO vegetable (name_vegetable, latin_name_vegetable, variety_vegetable) VALUES ('Broccoli', 'Brassica oleracea', 'Calabrese');
+INSERT INTO vegetable (name_vegetable, latin_name_vegetable, variety_vegetable) VALUES ('Broccoli', 'Brassica oleracea', 'Sprouting');
+INSERT INTO vegetable (name_vegetable, latin_name_vegetable, variety_vegetable) VALUES ('Broccoli', 'Brassica oleracea', 'Romanesco');
+
+-- Cauliflower
+INSERT INTO vegetable (name_vegetable, latin_name_vegetable, variety_vegetable) VALUES ('Cauliflower', 'Brassica oleracea', 'White');
+INSERT INTO vegetable (name_vegetable, latin_name_vegetable, variety_vegetable) VALUES ('Cauliflower', 'Brassica oleracea', 'Purple');
+INSERT INTO vegetable (name_vegetable, latin_name_vegetable, variety_vegetable) VALUES ('Cauliflower', 'Brassica oleracea', 'Romanesco');
+
+-- Zucchini
+INSERT INTO vegetable (name_vegetable, latin_name_vegetable, variety_vegetable) VALUES ('Zucchini', 'Cucurbita pepo', 'Yellow');
+INSERT INTO vegetable (name_vegetable, latin_name_vegetable, variety_vegetable) VALUES ('Zucchini', 'Cucurbita pepo', 'Green');
+INSERT INTO vegetable (name_vegetable, latin_name_vegetable, variety_vegetable) VALUES ('Zucchini', 'Cucurbita pepo', 'Patty Pan');
+
+-- Beets
+INSERT INTO vegetable (name_vegetable, latin_name_vegetable, variety_vegetable) VALUES ('Beet', 'Beta vulgaris', 'Detroit Dark Red');
+INSERT INTO vegetable (name_vegetable, latin_name_vegetable, variety_vegetable) VALUES ('Beet', 'Beta vulgaris', 'Chioggia');
+INSERT INTO vegetable (name_vegetable, latin_name_vegetable, variety_vegetable) VALUES ('Beet', 'Beta vulgaris', 'Golden');
+

@@ -1,0 +1,131 @@
+header
+{
+    background-color: #0b523e;
+    display: flex; /* Active le mode Flexbox */
+    justify-content: space-between; /* Place les éléments aux extrémités */
+    align-items: center; /* Aligne verticalement les éléments */
+    padding: 10px;
+    border-radius: 5px;
+}
+
+object /*Logo*/
+{
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+.div_brand_logo a {
+    display: inline-block; /* Ensures the anchor takes up the space of its contents */
+    width: 60px; /* Set the width to match the logo */
+    height: 60px; /* Set the height to match the logo */
+}
+
+.div_ruban_button
+{
+    display: flex;
+    justify-content: center; /* Centre horizontalement */
+    align-items: center; /* Centre verticalement */
+    height: 60px; /* Définit une hauteur pour le conteneur */
+}
+
+.div_account_cart_button
+{
+    display: flex;
+    justify-content: center; /* Centre les boutons à l'intérieur de la div */
+    align-items: center;
+    margin-right: 15px; /* Décale vers la gauche */
+    /*margin: 0 20px;*/
+    gap: 60px; /* Espace entre les éléments */
+}
+
+/* Style des boutons de navigation */
+.nav_button
+{
+    display: inline-block; /* S'assure que les liens se comportent comme des boutons */
+    padding: 5px 5px; /*Width and Height inside is "little box"*/
+    background-color: #0b523e;
+    color: white; /* Couleur du texte */
+    /*border: 1px solid white; /* Bordure verte plus claire */
+    /*border-radius: 5px;*/
+    text-decoration: none; /* Supprime le soulignement du lien */
+    font-family: "Copperplate", sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0 80px; /* Ajoute de l'espace entre les boutons */
+    transition: background-color 0.5s, border-color 0.5s; /* Transition douce pour la couleur */
+    border-bottom: 2px solid transparent; /* Bordure invisible par défaut */
+}
+
+/* Changer la couleur au survol */
+.nav_button:hover
+{
+    /*background-color: #007a58; /* Couleur orange au survol */
+    cursor: pointer; /* Curseur de la souris change en pointer */
+    border-bottom: 2px solid hsl(145, 59%, 43%); /* Petite ligne verte au bas du bouton */
+}
+
+#search_form
+{
+    margin-top: 5px;
+    background-color: #0b523e;
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+    font-family: "Copperplate", sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+#name_fruit,
+#variety_fruit,
+#latin_name_fruit,
+#origine_edible,
+#price_edible
+{
+    width: 2.8cm;
+}
+
+#quantity_stock
+{
+    width: 1cm;
+}
+
+#search_button
+{
+    border-radius: 5px;
+    background-color: white;
+    color: #0b523e;
+    margin-left: 20px;
+    
+}
+
+#search_button:hover
+{
+    cursor: pointer;
+    color: hsl(145, 59%, 43%);
+}
+
+.result_item {
+
+    display: flex;
+    justify-content: left; /* Centre horizontalement */
+    align-items: center; /* Centre verticalement */
+
+    border: 1px solid #ddd; /* Bordure autour de chaque élément */
+    border-color: #0b523e;
+    padding: 15px; /* Espacement interne */
+    margin: 10px 0; /* Espacement entre les éléments */
+    border-radius: 5px; /* Coins arrondis */
+    background-color: #f9f9f9; /* Couleur de fond */
+}
+
+.image
+{
+    width: 100px;
+    height: 100px;
+}
+
+.result_data
+{
+    margin-left: 100px;
+}

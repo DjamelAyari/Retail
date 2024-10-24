@@ -1,0 +1,47 @@
+-- Inserting data into the fruits table
+
+-- Apples
+INSERT INTO fruit (name_fruit, latin_name_fruit, variety_fruit) VALUES ('Apple', 'Malus domestica', 'Granny Smith');
+INSERT INTO fruit (name_fruit, latin_name_fruit, variety_fruit) VALUES ('Apple', 'Malus domestica', 'Fuji');
+INSERT INTO fruit (name_fruit, latin_name_fruit, variety_fruit) VALUES ('Apple', 'Malus domestica', 'Gala');
+
+-- Bananas
+INSERT INTO fruit (name_fruit, latin_name_fruit, variety_fruit) VALUES ('Banana', 'Musa acuminata', 'Cavendish');
+INSERT INTO fruit (name_fruit, latin_name_fruit, variety_fruit) VALUES ('Banana', 'Musa acuminata', 'Plantain');
+INSERT INTO fruit (name_fruit, latin_name_fruit, variety_fruit) VALUES ('Banana', 'Musa acuminata', 'Red Banana');
+
+-- Oranges
+INSERT INTO fruit (name_fruit, latin_name_fruit, variety_fruit) VALUES ('Orange', 'Citrus sinensis', 'Navel');
+INSERT INTO fruit (name_fruit, latin_name_fruit, variety_fruit) VALUES ('Orange', 'Citrus sinensis', 'Valencia');
+
+-- Grapes
+INSERT INTO fruit (name_fruit, latin_name_fruit, variety_fruit) VALUES ('Grape', 'Vitis vinifera', 'Concord');
+INSERT INTO fruit (name_fruit, latin_name_fruit, variety_fruit) VALUES ('Grape', 'Vitis vinifera', 'Thompson Seedless');
+
+-- Strawberries
+INSERT INTO fruit (name_fruit, latin_name_fruit, variety_fruit) VALUES ('Strawberry', 'Fragaria × ananassa', 'Albion');
+INSERT INTO fruit (name_fruit, latin_name_fruit, variety_fruit) VALUES ('Strawberry', 'Fragaria × ananassa', 'Eversweet');
+
+-- Pineapples
+INSERT INTO fruit (name_fruit, latin_name_fruit, variety_fruit) VALUES ('Pineapple', 'Ananas comosus', 'Queen');
+INSERT INTO fruit (name_fruit, latin_name_fruit, variety_fruit) VALUES ('Pineapple', 'Ananas comosus', 'Red Spanish');
+
+-- Kiwis
+INSERT INTO fruit (name_fruit, latin_name_fruit, variety_fruit) VALUES ('Kiwi', 'Actinidia deliciosa', 'Hayward');
+INSERT INTO fruit (name_fruit, latin_name_fruit, variety_fruit) VALUES ('Kiwi', 'Actinidia deliciosa', 'Baby Kiwi');
+
+-- Peaches
+INSERT INTO fruit (name_fruit, latin_name_fruit, variety_fruit) VALUES ('Peach', 'Prunus persica', 'Clingstone');
+INSERT INTO fruit (name_fruit, latin_name_fruit, variety_fruit) VALUES ('Peach', 'Prunus persica', 'Freestone');
+
+-- Plums
+INSERT INTO fruit (name_fruit, latin_name_fruit, variety_fruit) VALUES ('Plum', 'Prunus domestica', 'Santa Rosa');
+INSERT INTO fruit (name_fruit, latin_name_fruit, variety_fruit) VALUES ('Plum', 'Prunus domestica', 'European');
+
+-- Cherries
+INSERT INTO fruit (name_fruit, latin_name_fruit, variety_fruit) VALUES ('Cherry', 'Prunus avium', 'Bing');
+INSERT INTO fruit (name_fruit, latin_name_fruit, variety_fruit) VALUES ('Cherry', 'Prunus avium', 'Rainier');
+
+-- Mangoes
+INSERT INTO fruit (name_fruit, latin_name_fruit, variety_fruit) VALUES ('Mango', 'Mangifera indica', 'Alphonso');
+INSERT INTO fruit (name_fruit, latin_name_fruit, variety_fruit) VALUES ('Mango', 'Mangifera indica', 'Haden');

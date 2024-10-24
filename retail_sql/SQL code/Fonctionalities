@@ -1,0 +1,67 @@
+cultivation_table:
+
+	OK -This table need to be set with the different month of the years.
+
+customer_table:
+
+	OK -This table need is set to the american date format yyyy/mm/dd.
+
+floor_type_table:
+
+	-This table need to be set with the different type of floor.
+
+gathering_table:
+
+	OK -This table need to be set with the different month of the years.
+
+orders_table:
+
+	OK -This table need to set automatically the date of the order.
+	OK -This table need to set automatically the status of the order with pre set type of status.
+	OK -This table need to set automatically the total items of the order.
+	OK -This table need to set automatically the total price of the order.
+
+order_detail_table:
+
+	OK -This table need to set automatically the price of the items.
+
+stock_table:
+
+	OK -This table need to adjust automatically the quantity when there are an in or an out.
+		The stock quantity need to change when the order is paid/validated or when after a paiement/validation the order is cancelled
+		/!\ If the customer add to cart a new article, only if the order in paid, it will make automatic update on the stock table. It will remove article from the stock.
+			But if the order is deleted (after a paiment ) it will put back in stock the article.
+
+sun_need_table:
+
+	-This table need to be set with the different type of sun need.
+
+water_need_table:
+
+	-This table need to be set with the different type of water need.
+
+
+/*INSIDE THE C SERVER/CLIENT CODE*/
+WHEN A CLIENT IN THE HTML PAGE WILL INSERT/UPDATE/DELETE AN ARTICLE VIA THE HTML PAGE IT NEED TO HAVE AN IMPACT ON THE ORDERS TABLE AND THE ORDERS_DETAIL TABLE.
+THE SQL QUERY FOR THAT WILL TAKE INSIDE THE C SERVER/CLIENT CODE.
+
+IF THE CUSTOMER PUT AT LEAST ON ARTICLE IN HIS CART, IT WILL HAVE AN IMPACT:
+	-IT NEED TO FIRST CREATE A NEW ORDERS ROW IN THE ORDERS TABLE AND THEN CREATE A NEW ROW IN THE ORDERS_DETAIL TABLE.
+	-UNLESS THE CLIENT DELETE HIS CART COMPLETLY, IT WILL STAY THE SAME ORDERS AND FROM THIS IT WILL ONLY ADD A ORDERS_DETAIL ROW IN THE ORDERS_DETAIL TABLE.
+	-THE DEFAULT STATUS IN THE ORDERS TABLE WILL BE PENDING UNTIL FURTHER ACTIONS FROM THE CLIENT LIKE PAYING HIS ORDER.
+
+IF THE CUSTOMER MAKE DELETIONS IT NEED TO DELETE THE ORDERS_DETAIL TABLE ROWS AND IF THERE ARE NO MORE ARTICLE IN THE ORDERS_DETAIL TABLE IT WILL DELETE THE ORDERS TABLE ROW.
+
+FOR THE UPDATE PART THE CLIENT CAN ONLY CHANGE THE QUANTITY WANTED IN THE ORDERS_DETAIL TABLE.
+
+
+
+ENUM('Pending', 'Processing', 'Shipped', 'Delivered', 'Completed', 'Cancelled', 'Returned', 'Refunded', 'On Hold', 'Failed')
+The Returned, Refunded choices have to be removed from the possibilities.
+The cancelled options can take place for the customer if he cancelled his order in a limited periode of time and so before shipping.
+
+/*INSIDE THE C SERVER/CLIENT CODE*/
+I will need when the stock is not enough or empty to put a stop or a warning to the customer.
+
+
+

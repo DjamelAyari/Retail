@@ -1,0 +1,67 @@
+cultivation_table:
+
+This table store the cultivation periods.
+Each row can contain 1 fruit or 1 vegetable id, not a fruit and a vegetable at the same rows.
+If a vegetable or a fruit can be cultivated in sereval month, the same fruit or vegetable id will have multiple rows (one for each month).
+
+customer_table:
+
+RAS
+
+edible_table:
+
+RAS
+
+floor_type_table:
+
+This table store the floor type.
+Each row can contain 1 fruit or 1 vegetable id, not a fruit and a vegetable at the same rows.
+If a vegetable or a fruit can be cultivated in sereval floor type, the same fruit or vegetable id will have multiple rows (one for each floor type).
+
+fruit_table:
+
+RAS
+
+gathering_table:
+
+This table store the gathering periods.
+Each row can contain 1 fruit or 1 vegetable id, not a fruit and a vegetable at the same rows.
+If a vegetable or a fruit can be gathered in sereval month, the same fruit or vegetable id will have multiple rows (one for each month).
+
+orders_table:
+
+This table store the orders.
+Each row can contain 1 order id.
+If a customer has multiple orders, the same customer will have multiple rows (one id for each order).
+
+orders_detail_table:
+
+This table store the detail of the orders.
+If an orders contain different type of products (edible, seed, plant), the same order will have multiple rows (one for each id of product).
+
+plant_table:
+
+RAS
+
+seed_table:
+
+RAS
+
+stock_table:
+
+This table store the stock of the differents products (edible, seed, plant).
+Each rows contains only 1 edible or 1 seed or 1 plant id. Not a edible and fruit and plant at the same row.
+
+sun_need_table:
+
+This table store the sun need.
+Each row can contain 1 fruit or 1 vegetable id, not a fruit and a vegetable at the same rows.
+If a vegetable or a fruit need different sun need, the same fruit or vegetable id will have multiple rows (one for each sun need).
+
+water_need_table:
+
+This table store the water need.
+Each row can contain 1 fruit or 1 vegetable id, not a fruit and a vegetable at the same rows.
+If a vegetable or a fruit need different water need, the same fruit or vegetable id will have multiple rows (one for each water need).
+
+

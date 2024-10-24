@@ -1,0 +1,4 @@
+SELECT
+CAST(AES_DECRYPT(familly_name_customer, 'Laurine12...') AS CHAR) AS familly_name_customer
+FROM customer
+WHERE id_customer = 4;
